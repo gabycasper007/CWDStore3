@@ -141,6 +141,8 @@ AppPackages/
 
 # Others
 sql/
+system/cache/
+system/logs/
 *.Cache
 ClientBin/
 [Ss]tyle[Cc]op.*

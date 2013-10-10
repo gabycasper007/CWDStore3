@@ -1,0 +1,351 @@
+.category-info {
+    overflow: auto;
+    margin-bottom: 20px;
+    
+    .image {
+        float: left;
+        padding: 0;
+        margin-right: 15px;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.category-list {
+    overflow: auto;
+    margin-bottom: 15px;
+    
+    > div {
+        text-align: center;
+        margin-left: 11px;
+        min-height: 130px;
+        max-width: 100px;
+    }
+    ul {
+        float: left;
+        width: 18%;
+        list-style: none;
+        margin-left: 0;
+        
+        li {
+            margin: 5px 10px 5px 0;
+        }
+    }
+    .div a {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+
+.product-filter {
+    border-top: 4px double $green;
+    padding: 7px 0;
+    margin-bottom: 15px;
+    overflow: auto;
+    font: 11px $trebuchet;
+    color: darken($moreGray, 10%);    
+    .display {
+        margin-right: 15px;
+        float: left;
+        font-weight: normal;    
+        
+        a {
+            font-weight: normal;
+        }
+        img {
+            cursor: pointer;
+        }
+    }
+    .sort {
+        float: right;
+    }
+    .limit {
+        margin-left: 15px; 
+        float: right;
+    }
+    select {
+        background: $lightGray;
+        @include border-radius(0);
+        height: 23px;
+        padding: 2px;
+        margin-left: 3px;     
+    }
+}
+
+.product-compare {
+    float: left;
+    padding-left: 15px;
+    margin-top: 4px;
+    font-weight: bold;
+    
+    a {
+        font-weight: normal;
+    }
+}
+
+.product-list {
+    margin-top: 25px;
+    
+    > div {
+        overflow: auto;
+        margin-bottom: 15px;
+        margin-right: 20px;
+        margin-left: 0; 
+        width: 100%;
+        position: relative; 
+        + div {
+            padding-top: 16px;  
+        }
+    }
+    .right {
+        float: right;
+        margin-left: 15px;
+    }
+    .span4 {
+        width: 330px;
+    }
+    .image {
+        float: left;
+        margin-right: 10px;
+        margin-left: 0;
+        position:relative;
+        
+        img {
+            padding: 0;
+            background-color: $white;
+            text-align: center;
+            max-width: 145px;
+            
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    .name {
+        margin-bottom: 3px;
+        
+        a {
+            font-size: 14px;
+        }
+    }
+    .description {
+        line-height: 15px;
+        margin-bottom: 15px;
+    }
+    .rating {
+        color: $moreGray;
+        margin-bottom: 10px;    
+    }
+    .price {
+        float: right;
+        margin-left: 8px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .price-old {
+        font-weight: normal;    
+        font-size: 12px;    
+        text-decoration: line-through;
+    }
+    .price-tax {
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .cart {
+        margin-bottom: 15px;
+        text-align: center;
+        
+        input {
+            max-width: 140px;
+        }
+    }
+    .wishlist,
+    .compare {
+        margin-bottom: 5px;
+        margin-right: 15px;
+        padding-left: 20px; 
+        text-align: center;
+        @extend .inline-block;
+        
+        a {
+            font-size: 11px;
+            display: block;
+        }
+    }
+    .compare {
+        clear: both;
+    }
+}
+
+.wishlist, .compare {
+    height: 15px;
+    padding: 0 15px 0 5px;
+}
+
+
+#column-left + #column-right + #content .product-grid > div {
+    width: 125px;   
+}
+
+.product-grid,
+.es-carousel,
+.product-related {
+    width: 100%;
+    
+    .pbox {
+        padding: 5px 4px 10px;  
+        background-color: $white;
+        text-align: center; 
+        border: 1px solid $almostGray;
+
+        &:hover {
+            .description {
+                display: block;
+            }
+            .name a,
+            .prod-descr,
+            .price,
+            .price-old {
+                color: $white;
+            }
+        }    
+    }
+    > div {
+        width: 230px;
+        vertical-align: top;
+        text-align: center;
+        margin: 10px 0 5px 19px;
+        position: relative;     
+        @extend .inline-block;
+        
+        &.span-related {
+            margin-left: 20px;
+        }
+    }
+    .image {
+        display: block;
+        margin-bottom: 0;
+        z-index: 3;
+
+        img {
+            padding: 0;
+            background-color: $white;
+            text-align: center;
+            width: 210px;
+            height: 210px;
+
+            @include transition('all 0.2s ease-in 0s');  
+        }
+        a {
+            display: block;
+        }
+    }
+    .name {
+        margin: 0 auto;
+        max-width: 200px;
+        position: relative;
+        z-index: 1;
+        
+        a {
+            display: block;
+            margin-bottom: 4px;
+            margin-top: 10px;
+            color: $red;
+            font: 18px $mainFont;
+        }
+    }
+    .rating {
+        position: relative;
+        display: none;
+    }
+    .description {
+        background: url("../imgs/transp-red.png");
+        display: none;
+        height: 315px;
+        left: 0;
+        padding: 25px 7px 10px;
+        position: absolute;
+        top: 0;
+        width: 216px;
+    }
+
+
+
+    .price {
+        color: $red;
+        font: 25px $mainFont;
+        display: block;     
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 1;
+
+        .price-tax {
+            display: none;
+        }
+    }
+    .price-old {
+        color: $darkerGray;
+        font-size: 12px;
+        font-weight: normal;
+        margin-right: 10px;
+        position: relative;
+        text-decoration: line-through;
+        top: -3px;
+    }
+    .cart input {
+        @extend .sprite;
+        background-position: -6px -247px ;
+        width: 159px;
+        height: 58px;   
+        text-indent: -5000px;
+        margin-top: 20px;     
+    }
+    .see_details a {
+        @extend .sprite;
+        background-position: -4px -189px ;
+        width: 160px;
+        height: 50px;
+        padding: 0;
+        margin: 20px auto;        
+    }
+    .wishlist,
+    .compare {
+        margin-bottom: 5px;
+        text-align: left;
+        padding-left: 20px;
+        @extend .inline-block;
+        
+        a {
+            font-size: 11px;
+            display: block;
+        }
+    }
+    .compare {
+        margin-left: 15px;
+    }
+}
+
+.es-carousel {
+    .pbox {
+        padding: 5px 14px 10px;
+    }
+    .image img {
+        width: 201px;
+    }
+    .description {
+        width: 221px;
+    }
+}
+.product-related {
+    > div {
+        width: 217px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    .pbox:nth-child(4n) {
+
+    }
+}

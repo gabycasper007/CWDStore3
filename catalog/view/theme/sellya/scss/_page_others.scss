@@ -1,0 +1,681 @@
+/*  Manufacturer Page  */
+.manufacturer-list { 
+    border: none;
+    padding: 5px;
+    overflow: auto;
+    margin-bottom: 20px;
+    
+    ul {
+        float: left;
+        width: 25%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        font-weight: bold;  
+    }
+}
+
+.manufacturer-heading {
+    background: $smokeWhite;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 8px;
+    margin-bottom: 6px;
+}
+
+.manufacturer-content {
+    padding: 8px;
+}
+
+/*  Compare  */
+.compare-info {
+    border-collapse: collapse;
+    width: 100%;
+    border-top: 1px solid $lightGray;
+    border-left: 1px solid $lightGray;
+    margin-bottom: 20px;
+    
+    thead td {
+        color: $black;
+        font-size: 14px;
+        font-weight: bold;
+        background: $smokeWhite;
+        text-align: left;
+    }
+    tr:hover {
+        background-color:$smokeWhite;
+    }
+    tr td {
+        padding: 7px;
+        width: 20%;
+        color: $darkestGray;
+        text-align: center;
+        vertical-align: top;
+        border-right: 1px solid $lightGray;
+        border-bottom: 1px solid $lightGray;
+        
+        &:first-child {
+            color: $black;
+            font-weight: bold;
+            text-align: right;
+        }
+    }
+    .name a {
+        font-weight: bold;
+    }
+    .price-old {
+        text-decoration: line-through;
+    }
+    .price-new {
+        font-weight: bold;  
+    }
+}
+
+.wishlist-info {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    td {
+        padding: 7px;
+    }
+    thead {
+        td {
+            color: $darkestGray;
+            font-weight: bold;
+            background-color: $smokeWhite;
+            border-bottom: 1px solid $lightGray;
+        }
+        .image {
+            text-align: center;
+        }
+    }
+    tbody {
+        td {
+            vertical-align: top;
+            border-bottom: 1px solid $lightGray;
+        }
+        .image {
+            text-align: center;
+            
+            img {
+                border: 1px solid $lightGray;
+            }
+        }
+        .action img {
+            cursor: pointer;
+        }
+    }
+    .name, 
+    .model,
+    .stock {
+        text-align: left;
+    }
+    .quantity,
+    .price,
+    .total,
+    .action {
+        text-align: right;
+    }
+}
+
+.login-content {
+    margin-bottom: 20px;
+    overflow: auto;
+    
+    .left {
+        float: left;
+        width: 48%;
+    }
+    .right {
+        float: right;
+        width: 48%
+    }
+    .content {
+        min-height: 190px;
+    }
+}
+
+.order-list {
+    margin-bottom: 10px;
+    
+    .order-id {
+        width: 49%;
+        float: left;
+        margin-bottom: 2px;
+    }
+    .order-status {
+        width: 49%;
+        float: right;
+        text-align: right;
+        margin-bottom: 2px;
+    }
+    .order-content {
+        padding: 10px 0;
+        width: 100%;
+        margin-bottom: 20px;
+        border-top: 1px solid $lightGray;
+        border-bottom: 1px solid $lightGray;
+        @extend .inline-block;
+        
+        div {
+            float: left;
+            width: 33.3%;
+        }
+    }
+    .order-info {
+        text-align: right;
+    }
+}
+.order-detail {
+    background: $lightGray;
+    font-weight: bold;
+}
+
+.return-list {
+    margin-bottom: 10px;
+    
+    .return-id {
+        width: 49%;
+        float: left;
+        margin-bottom: 2px;
+    }
+    .return-status {
+        width: 49%;
+        float: right;
+        text-align: right;
+        margin-bottom: 2px;
+    }
+    .return-content {
+        padding: 10px 0;
+        width: 100%;
+        margin-bottom: 20px;
+        border-top: 1px solid $lightGray;
+        border-bottom: 1px solid $lightGray;
+        @extend .inline-block;
+        
+        div {
+            float: left;
+            width: 33.3%;
+        }
+    }
+    .return-info {
+        text-align: right;
+    }
+}
+
+.return-product {
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.return-name,
+.return-mode,
+.return-quantity,
+.return-reason,
+.return-opened {
+    float: left;
+    margin-right: 15px;
+    width: 31%;
+}
+
+.return-quantity {
+    margin-right: 0;
+}
+
+.return-detail {
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.return-reason {
+    width: 45%;
+}
+
+.return-opened {
+    width: 50%;
+    
+    textarea {
+        width: 98%;
+        vertical-align: top;
+    }
+}
+
+.return-captcha {
+    float: left;
+}
+
+.download-list {
+    margin-bottom: 10px;
+    
+    .download-id {
+        width: 49%;
+        float: left;
+        margin-bottom: 2px;
+    }
+    .download-status {
+        width: 49%;
+        float: right;
+        text-align: right;
+        margin-bottom: 2px;
+    }
+    .download-content {
+        padding: 10px 0;
+        width: 100%;
+        margin-bottom: 20px;
+        border-top: 1px solid $lightGray;
+        border-bottom: 1px solid $lightGray;
+        @extend .inline-block;
+        
+        div {
+            float: left;
+            width: 33.3%;
+        }
+    }
+    .download-info {
+        text-align: right;
+    }
+}
+
+.cart-info {
+    table {
+        width: 100%;
+        margin-bottom: 15px;
+        border-collapse: collapse;
+        font: 16px $erasL;
+    }
+    small {
+        font-family: Verdana;
+        font-size: 67%;
+    }
+    td {
+        padding: 7px;
+    }
+    thead {
+        td {
+            color: $darkestGray!important;
+            background-color: $smokeWhite;
+            border-bottom: 1px solid $lightGray;
+            font-family: $erasM;
+        }
+        .image {
+            text-align: center;
+        }
+    }
+    tbody {
+        td {
+            vertical-align: top;
+            border-bottom: 1px solid $lightGray;
+        }
+        .image {
+            text-align: center;
+            
+            img {
+                border: none;
+            }
+        }
+        .quantity input[type='image'], .quantity img {
+            position: relative;
+            top: 4px;
+            cursor: pointer;
+        }
+        .stock {
+            color: $red;
+            font-weight: bold;
+        }
+    }
+    .name,
+    .model,
+    .quantity {
+        text-align: left;
+    }
+    .price,
+    .total {
+        text-align: right;
+    }
+}
+.cart-module > div {
+    display: none;
+}
+.cart-total {
+    border-top: 1px solid $lightGray;
+    overflow: auto;
+    padding-top: 8px;
+    margin-bottom: 15px;
+    
+    table {
+        float: right;
+    }
+    td {
+        padding: 3px;
+        text-align: right;
+    }
+}
+
+.checkout-heading {
+    background: $smokeWhite;
+    border-bottom: 1px solid $lightGray;
+    border-top: 1px solid $white;  
+    color: $darkestGray;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 8px;
+    
+    a {
+        float: right;
+        margin-top: 1px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+}
+
+#login > a {
+    float: right;
+    margin-bottom: 12px;
+    margin-right: 37px;
+}
+
+#button-login {
+    float: right;
+    margin-right: 37px;
+}
+
+
+#checkoutWrap {
+    width: 686px;
+}
+
+.checkout-content {
+    background: darken($lightGray, 3%);
+    display: block;
+    overflow: auto;
+    margin: 0;
+    padding: 0 20px;
+
+    .postcode,
+    .address2,
+    .fax,
+    #tax-id-display,
+    #company-id-display {
+        display: none !important;
+    }
+    #companyDetails {
+        display: none;
+    }
+
+    .large-field {
+        width: 200px;
+    }
+    .huge-field {
+        width: 445px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        border: medium none;
+        color: darken($moreGray, 20%);
+        font: 14px $arial;
+        height: 12px;
+        margin-bottom: 10px;
+        padding: 13px 10px;
+        text-transform: uppercase;
+    }
+    
+    h2 {
+        margin: 15px 0 10px;
+        clear: both;
+    }
+
+    select {
+        @include border-radius(0);
+        color: lighten($darkestGray, 15%);
+        margin: 3px 0 12px;
+        width: 220px !important;
+    }
+    
+    .error {
+        margin-bottom: 10px;
+    }
+
+    .totheleft {
+        float: left;
+        margin-right: 5px;
+    }
+    label {
+        color: $darkestGray;
+        cursor: pointer;
+        font: 18px $erasL;
+
+        input {
+            float: left;
+            margin-right: 5px;
+        }
+    }
+    input[type="checkbox"] + label,
+    label[for="register"],
+    label[for="guest"] {
+        display: block;
+    }
+    label[for="country_id"],
+    select[name="country_id"] {
+        display: none !important;
+    }
+    label[for="city"],
+    label[for="zone_id"] {
+        display: block !important;
+        margin-top: 6px;
+    }
+    #fizicalORjuridical {
+        margin-top: 20px;
+    }
+    .letsgetlabel {
+        @extend .inline-block;
+        margin-left: 10px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    .left {
+        float: left;
+        width: 38%;
+        clear: left;
+        padding-bottom: 15px;
+
+        #checkout & {
+            width: 56%;
+        }
+    }
+    .right {
+        float: left;
+        width: 48%;
+        #checkout & {
+            float: right;
+            width: 41%;
+        }
+    }
+    .buttons {
+        clear: both;
+        text-align: right;
+    }
+}
+.checkout-product {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    td {
+        padding: 7px;
+    }
+    thead td {
+        color: $darkestGray;
+        font-weight: bold;
+        background-color: $smokeWhite;
+        border-bottom: 1px solid $lightGray;
+    }
+    tbody td {
+        vertical-align: top;
+        border-bottom: 1px solid $lightGray;
+    }
+    tfoot td {
+        text-align: right;
+        border-bottom: 1px solid $lightGray;
+    }
+    .name,
+    .model {
+        text-align: left;
+    }
+    .quantity,
+    .price,
+    .total {
+        text-align: right;
+    }
+}
+
+.contact-info {
+    overflow: auto;
+    float: left;
+    margin-left: 0;
+    width: 47%;
+    
+    .left,
+    .right {
+        float: left;
+        width: 48%;
+    }
+}
+.contact-custom {
+    margin-top: 20px;
+    padding: 20px 0 10px;
+}
+.contact-form {
+    float: right;
+    margin-left: 0;
+    padding: 0;
+    width: 49%;
+}
+
+.sitemap-info {
+    overflow: auto;
+    margin-bottom: 40px;
+    
+    .left,
+    .right {
+        float: left;
+        width: 48%;
+    }
+} 
+
+// Account
+
+.account-heading {
+    border-bottom: 4px double $green;
+    margin-left: 33px;
+    margin-top: 15px;
+    padding-bottom: 7px;
+    width: 980px;
+    h1 {
+        @extend .inline-block;
+        margin-bottom: 0;
+    } 
+}
+.welcomePop {
+    @extend .inline-block;
+    float: right;
+    font: 17px $erasL;
+    margin: 22px 10px 0 0;
+    .userimg {
+        @extend .sprite;
+        background-position: -186px -44px ;
+        width: 23px;
+        height: 23px;
+        margin-left: 10px;
+        float: right;
+    }
+    strong {
+         font-family: $erasM;
+         font-weight: normal;
+    }
+}
+
+.box-content-account {
+    margin-top: 38px;
+    li {
+        a {
+            background: $smokeWhite;
+            border-bottom: 1px solid $lightGray;
+            border-left: 1px solid $lightGray;
+            border-right: 1px solid $lightGray;
+            color: #7E7E7E;
+            display: block;
+            font: 12px $arial;
+            padding: 15px 22px;
+            text-transform: uppercase;
+            &:hover,
+            &.selected {
+                background: $white;
+                border-right: 1px solid $white;
+                color: $green;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+        &:first-child a:first-child {
+            border-radius: 6px 6px 0 0;
+            border-top: 1px solid $lightGray;
+            &:hover,
+            &.selected {
+                border-radius: 6px 0 0 0;
+            }
+        }
+        &:last-child a {
+            border-radius: 0 0 6px 6px;
+            border-top: 1px solid $lightGray;
+            &:hover,
+            &.selected {
+                border-radius: 0 0 0 6px;
+            }
+        }
+        .accountArrow {
+            float: right;
+            @extend .sprite;
+            background-position: -421px -171px ;
+            width: 4px;
+            height: 7px;
+            position: relative;
+            top: 4px;     
+        }
+    }
+}
+
+.accountblock li,
+.accountblock a {
+    color: $darkestGray;
+    font: 13px $verdana;
+}
+
+.withlabels {
+    label {
+        color: #777777;
+        font: 12px Verdana;
+        text-transform: uppercase;
+        width: 99px;
+    }
+
+    input {
+        margin-bottom: 18px;
+    }
+
+    td:nth-child(2n) label {
+        margin-left: 16px;
+    }
+}
+.cartheading {
+    background: url(../imgs/bigcart.png) no-repeat right top;
+    border-bottom: 4px double $green;
+    padding: 9px 0;
+    margin-bottom: 30px;
+}

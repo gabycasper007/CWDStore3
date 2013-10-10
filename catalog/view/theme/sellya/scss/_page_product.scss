@@ -1,0 +1,604 @@
+.sale-icon {
+    @extend .sprite;
+    background-position: -200px -174px;
+    height: 123px;
+    position: absolute;
+    right: -3px;
+    text-indent: -5000px;
+    top: -4px;
+    width: 82px;
+    z-index: 5;
+}
+
+#prev-next {
+    float: right;
+    font-size: 12px;
+    a {
+        color: $darkerGray;
+        &:first-child {
+            margin-right: 8px;
+        }
+        &:hover {
+            color: $darkestGray;
+        }
+    }
+}
+
+.breadnav {
+    border-top: 4px double $green;
+    padding: 7px 0 20px;
+}
+
+
+.product-name {
+    float: left;
+
+    h1 {
+        color: $red;
+        text-shadow: none;
+        margin-top: 0;
+    }
+}
+
+.product-info {
+    clear: both;
+    margin-bottom: 20px;
+
+    .header-price {
+        border-bottom: 1px dotted $moreGray;
+    }
+    
+    > .left {
+        float: left;
+        margin-right: 15px;
+        
+        + .right {
+            width: 644px;
+        }
+    }
+    > .right {
+        float: left;
+    }
+    .image {
+        background-color: $white;
+        border: 1px solid $lightGray;
+        float: left;
+        margin-bottom: 20px;
+        text-align: center;
+        position: relative;
+        
+        .zoom-b {
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            height: 12px;
+            width: auto;
+            z-index: 5;
+            
+            a {
+                background: url("../image/button-search.png") no-repeat scroll;
+                color: $darkerGray;
+                font-size: 10px;
+                text-transform: uppercase;
+                padding-left: 18px;
+            }
+        }
+    }
+    #cloud-zoom-big {
+        left: 340px!important;
+        @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.1));
+    }
+    .image-additional {
+        margin-left: -10px;
+        clear: both;
+        overflow: hidden;
+        width: 331px;
+        
+        img {
+            padding: 0;
+            background-color: $white;
+            margin-top: 2px;
+            margin-left: 2px;
+        }
+        a {
+            float: left;
+            display: block;
+            margin: 0 4px;
+        }
+    }
+    .shortDescription {
+        clear: both;
+        color: $moreGray;
+        font: italic 15px $georgia;
+        margin: 0 10px 15px 0;
+        width: 380px;
+        float: left;
+    }
+    .input-mini {
+        padding: 3px 2px 1px;
+        text-align: center;
+        width: 20px;
+    }
+    .description {    
+        padding: 15px 5px;
+        margin-bottom: 5px;
+        line-height: 20px;
+        font-weight: bold;      
+        
+        span {
+            font-weight: normal;
+        }
+    }
+    .options {    
+        padding: 15px 5px;
+        line-height: 20px;
+        font-weight: bold;
+        clear: both;
+        position: relative;    
+    }
+    .buy {
+        margin-bottom: 20px;
+    }
+    .price {
+        position: relative;
+        text-align: right;
+        color: $darkerGray;
+        font: 17px $mainFont;
+
+        .price-new {
+            color: $red;
+            font: 41px/30px $mainFont;
+
+            .decimals {
+                margin: 0 -8px 0 -9px;
+                top: -22px;
+            }          
+        }        
+        .reward {
+            font-size: 12px;
+            font-weight: normal;
+        }
+        .discount {
+            font-size: 12px;    
+            font-weight: normal;
+        }
+        .price-old {
+            position: relative;
+            top: -1px;
+            margin-right: 15px;
+
+            .currency {
+                font-size: 14px;
+            }
+        }
+    }
+
+    #loadingOpprice { 
+        background: url(../imgs/loading2.gif) no-repeat;
+        display: none;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        right: -54px;
+        top: 2px;
+    }
+
+    .decimals {
+        position: relative;
+        top: -12px;
+        font-size: 10px;
+        margin: -3px;
+    }
+    .currency {
+        font-size: 20px;
+        text-transform: lowercase;
+    }
+    .price-tax {
+        font-size: 12px;
+        font-weight: normal;
+    }
+    span.stock {
+        font-weight: bold;
+    }
+    .option {
+        margin-bottom: 15px;
+        clear: none;
+        @extend .inline-block;
+        select {
+            width: 120px;
+        }        
+    }
+    .alegeculoarea {
+        position: absolute;
+        right: 0;
+        top: 77px;
+    }
+    .optionSelect select,
+    .hasDatepicker {
+            background: $lightGray;
+            color: $black;
+            font-size: 12px;
+            height: 28px;
+            padding: 5px 0;
+            width: 126px;
+            text-align: center;
+            @include border-radius(0);          
+    }
+    .hasDatepicker {
+        cursor: pointer;
+        width: 160px;
+        height: 16px;        
+    }
+    .intervalorar,
+    .datadelivrare,
+    .judetullivrarii {
+        float: left;
+        margin-right: 24px;
+        margin-top: 12px;
+        margin-left: 10px;
+        .groupOptionName {
+            display: inline-block;
+            margin-bottom: 10px;
+            text-transform: none;
+        }
+        select {
+            width: 160px;
+        }
+    }
+    .optionCheckbox {
+        border-bottom: 1px dotted $moreGray;
+        border-top: 1px dotted $moreGray;
+        padding: 13px 0 3px;
+
+        .option_desc {
+            text-align: center;
+            margin: 12px 11px;
+            width: 136px;
+            position: relative;
+
+            &:last-child {
+                margin-right: 0;
+            }
+            label {
+                display: block;
+            }
+            .optionName {
+                font-size: 14px;
+            }
+            .optionPrice {
+                font: 22px $mainFont;
+            }
+        }
+    }
+    .desc_description {
+        display: none;
+        background: #E3A3B5;
+        color: white;
+        padding: 0 10px;
+        position: absolute;
+        text-align: left;
+        width: 220px;        
+        left: 30px;
+        bottom: 188px;
+        @include border-radius(12px);
+        &:after {
+            @extend .sprite;
+            background-position: -240px -323px ;
+            width: 22px;
+            height: 6px;            
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left: 25px;
+        }
+    }
+    .optionImage {
+        position: relative;
+        .optionMask {
+            @extend .sprite;
+            background-position: -348px -207px ;
+            width: 104px;
+            height: 105px;            
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -54px;
+        }
+    }
+    .groupOptionName {
+        color: $darkestGray;
+        font: normal 18px $erasL;
+        text-transform: uppercase;
+    }
+    .optionName {
+       color: $darkestGray;
+       font: 16px $erasL; 
+    }
+    .option_desc {
+        margin: 12px 6px 12px 12px;
+        @extend .inline-block;
+        > input {
+            margin-right: 6px;
+        }
+    }
+    .optionPrice {
+        color: $red;
+        font: 20px $erasL;
+        margin-left: 5px;
+    }
+    .dim_description p, 
+    .individualOptionDesc {
+        color: $moreGray;
+        font: 9px $verdana;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .options h4 {
+        padding: 0;
+        margin-bottom: 20px;
+        line-height: normal;    
+    }
+    .optionNumber {
+        background: $moreGray;
+        color: $white;
+        font: 19px $thirdFontB;
+        padding: 10px 17px;
+        margin-right: 5px;
+
+        @extend .inline-block;
+        @include border-radius(30px);
+    }
+    .option-image {
+        margin-top: 3px;
+        margin-bottom: 10px;
+        
+        label {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            margin-right: 5px;
+            border: 1px solid $gray;
+            cursor: pointer;
+        }
+    }
+    .cart {
+        padding: 4px 0 0;
+        overflow: auto;
+        text-align: center;
+        float: right;
+        position: relative;
+        z-index: 1;
+        
+        div {
+            vertical-align: middle;
+            
+            > span {
+                padding-top: 7px;
+                display: block;
+            }
+        }
+        .minimum {
+            padding-top: 10px;
+            font-size: 11px;
+            clear: both;
+            width: 100%;
+            text-align: center; 
+        }
+    }
+    .add-to-cart {
+        clear: both;
+        float: left;
+        width: 100%;
+        font: italic 15px $georgia;
+        color: $moreGray;
+    }
+    .wishlist-compare {
+        margin-top: 5px;    
+        width: 100%;
+        text-align: center;
+        
+        a {
+            margin-top: 15px;
+            font-size: 11px;
+            font-weight: bold;
+            @extend .inline-block;
+        }
+    }
+    .review {
+        color: $darkestGray;
+        text-align: center;
+        margin: 5px 5px 10px;
+        padding-top: 13px;
+        
+        > div {
+            padding: 2px 8px 8px;
+            line-height: 20px;
+            
+            > span {
+                color: $blue;
+            }
+        }
+    }
+    .share {
+        overflow: auto;
+        line-height: normal;
+    }
+}
+
+/******************************************************/
+/*  TABS
+/******************************************************/
+.htabs {
+    height: 41px;
+    line-height: 16px;
+    a {
+        padding: 12px 25px;
+        float: left;
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center;
+        margin-right: 8px;
+        display: none;
+        color: $darkestGray;
+        &.selected {
+            border: 1px solid $almostGray;
+            border-bottom: 1px solid $white;
+            background: $white;
+            position: relative;
+            z-index: 1;
+            padding-bottom: 12px;
+            font-weight: bold;
+            @include border-radius(12px 12px 0 0);
+        }
+        &:hover {
+            color: $black;
+            text-decoration: none;  
+        }
+    }
+}
+.tab-content {
+    border-top: 1px solid $almostGray;
+    clear: both;
+    margin-bottom: 10px;
+    overflow: auto;
+    padding: 15px 0 0;
+    position: relative;
+    top: -1px;
+}
+#product-information {
+    position: relative;
+    top: -39px;
+}
+#right-sm {
+    clear: both;
+}
+.right-sm-share,
+.right-sm-tags,
+.right-sm-custom,
+.right-sm-manufacturer-logo {
+    float: right;
+    clear: right;   
+    text-align: center;
+    overflow: hidden;
+    background-color: $white;
+}
+.right-sm-tags {
+    padding-bottom: 12px;
+}
+
+.product-manufacturer-logo-block {
+    padding: 0 15px!important;
+    text-align: center!important;
+    width: 135px;
+}
+
+.product-custom-block {
+    padding: 15px 10px!important;
+    text-align: left!important;
+    width: 145px;
+    
+    ul li {
+        background: none;
+        list-style: inherit!important;
+    }
+}
+
+.product-share {
+    padding: 15px 10px!important;
+    text-align: left!important;
+}
+
+.product-tags {
+    padding: 15px 10px;
+    text-align: left;
+    width: 145px;
+    
+    div {
+        margin-bottom: 6px;
+        float: left;
+        
+        a {
+            background: $smokeWhite;
+            padding: 3px 6px;
+            margin-right: 5px;
+            font-size: 11px;
+        }
+    }
+}
+
+#content .content {
+    .reviews-left {
+        float: left;
+        width: 170px;
+        padding: 70px 10px 10px;
+        text-align: center;
+        background: url("../image/mw_1.png") no-repeat $white;
+        background-position: center top;
+        
+        span {
+            font-size: 11px;
+            display: block;
+            margin-top: 5px;
+        }
+    }
+    .reviews-right {
+        float: left;
+        max-width: 60%;
+        margin-top: 10px;
+        padding: 30px 40px;
+        background-color: $smokeWhite;
+        border: 1px solid $lightGray;
+        font-size: 13px;
+    }
+    .review-arrow {
+        position: absolute;
+        margin-top: -18px;
+        margin-left: -66px;
+        width: 26px;
+        height: 55px;
+        background: url("../image/review-arrow.png") no-repeat;
+    }
+}
+
+.tags {
+    margin-top: 30px;
+    
+    a {
+        background: $smokeWhite;
+        padding: 3px 6px;
+        margin-left: 5px;
+    }
+}
+
+.attribute {
+    border-collapse: collapse;
+    width: 100%;
+    border-top: 1px solid $gray;
+    border-left: 1px solid $gray;
+    margin-bottom: 20px;
+    
+    thead td {
+        color: $black;
+        font-size: 14px;
+        font-weight: bold;
+        background: $smokeWhite;
+        text-align: left;
+    }
+    tr td {
+        padding: 7px;
+        color: $darkestGray;
+        text-align: center;
+        vertical-align: top;
+        border-right: 1px solid $gray;
+        border-bottom: 1px solid $gray;
+        
+        &:first-child {
+            color: $black;
+            font-weight: bold;
+            text-align: right;
+            width: 20%;
+        }
+    }
+}

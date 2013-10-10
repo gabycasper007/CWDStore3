@@ -1,0 +1,353 @@
+.breadcrumb {
+    background-color: transparent;
+    background-image: none;
+    border-style: none;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0;
+}
+.breadcrumb a {
+	color: #000;
+}
+.breadcrumb > span:last-child a {
+	color: #fb9401;
+}
+/* WISHLIST AND COMPARE*/
+.WishCom {
+	margin-left: 0;
+	text-align: center;
+	list-style-type: none;
+}
+.WishCom li {
+	display: inline-block;
+	padding-left: 10px;
+}
+.WishCom li a {
+	text-transform: lowercase;
+	cursor: pointer;
+	color: #000;
+}
+.WishCom li a:hover {
+	color: #3C91C0;
+}
+.category-name {
+	color: #3c91c0;
+	margin-bottom: 18px;
+}
+.subcategory-items {
+	list-style-type: none;
+	margin: 0;
+}
+.subcategory-items li {
+	display: inline-block;
+	margin-right: 10px;
+	text-align: center;
+}
+.subcategory-items li > a:hover {
+	opacity: 0.7;
+}
+.subcategory_title {
+	margin-top: 10px;
+}
+.sort, .display, .product-compare, .limit {
+	float: left;
+	margin-right: 40px;
+	font-weight: bold;
+    color: #585858;
+}
+.product-filter select {
+	width: 100px;
+}
+.display img {
+	cursor: pointer;
+}
+.display {
+	padding-top: 4px;
+}
+.display img:hover {
+	opacity: 0.6;
+}
+.pagination a {
+    border-style: none;
+    float: none;
+    padding: 0 4px;
+}
+.pagination a:hover, 
+.pagination .active a {
+	background-color: transparent;
+}
+.links, .box-product .image {
+	float: left;
+	position: relative;
+	margin-right: 4px;
+}
+.links .sale-icon {
+	background: url("../imgs/tag-promo.png") no-repeat scroll 0 0 / 20px 20px transparent;	
+}
+.results {
+	float: right;
+	padding-top: 8px;
+}
+.product-list .wishlist {
+	float: left;
+}
+.product-list .compare {
+	float: right;
+}
+.product-list .rating {
+	text-align: center;
+}
+.wishlist a, .compare a {
+	color: #000;
+	cursor: pointer;
+	text-transform: lowercase;
+}
+.wishlist a:hover, 
+.compare a:hover {
+	color: #3C91C0;
+}
+.price {
+	font-size: 20px;
+	color: #db2424;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.stock {
+    margin-bottom: -16px;
+}
+.cos-cumparaturi {
+	margin-bottom: 30px;
+}
+#column-left .box-heading h2 {
+    background: #3c91c0;
+    color: #fff;
+    margin: 0;
+    padding-left: 10px;
+}
+.box {
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+}
+ol {
+	list-style-type: none;
+	margin-left: 0;
+}
+.box-product .name a, 
+.box-product .price {
+	font-size: 13px;
+}
+.l_column {
+	clear: both;
+}
+.box-product .l_column {
+	margin-top: 20px;
+}
+.box-heading > h2 {
+	font-size: 16px;
+}
+.product-list {
+	margin-top: 40px;
+}
+.product-list .name a {
+	margin-top: 10px;
+	color: #489AC6;
+}
+.reviews-left b {
+	margin-right: 6px;
+}
+.list-style {
+	margin-top: 14px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+/* Product */
+.preturiRightSide {
+	text-align: right;
+}
+.preturiRightSide .cantitate {
+	display: inline-block;
+	text-align: right;
+	margin-left: 10px;
+}
+.preturiRightSide #wishAndCompare {
+	display: inline-block;
+}
+#wishAndCompare .compare, #wishAndCompare .wishlist {
+	float: left;
+}
+.tags ul {
+	list-style-type: none;
+	margin-left: 0;
+}
+.tags li {
+	float: left;
+	margin-right: 10px;
+}
+.tags a {
+	background: #ddd;
+	color: #333;
+	padding: 5px 11px;
+	margin-bottom: 2px;	
+	display: inline-block;
+}
+.tags a:hover {
+	background: #3B92BF;
+	color: #fff;
+}
+.preturiLeftSide {
+	text-align: left;
+}
+.livrare {
+	margin-top: 30px;
+    background: none repeat scroll 0 0 #f4f4ec;
+    display: block;
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+    -webkit-box-shadow: inset  0px 0 5px 0px #fff;
+    -moz-box-shadow: inset  0px 0 5px 0px #fff;
+    box-shadow: inset  0px 0 5px 0px #fff;
+}
+.cumpara-in-rate {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #3c91c0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.telephone-livrare {
+	text-align: center;
+	margin-bottom: 0;
+}
+.livrare h3 {
+	text-transform: uppercase;
+	color: #777;
+	font-size: 16px;
+}
+.comision {
+	text-align: left;
+}
+/* CART */
+#payment-address .custom-inputs {
+	text-align: center;
+}
+.custom-inputs input {
+	-moz-box-shadow: none;
+	box-shadow: none;
+	height: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+.custom-inputs select {
+    border-radius: 0 0 0 0;
+    height: 35px;
+    margin-top: 10px;
+}
+.confidence {
+	clear: both;
+}
+#fizicalORjuridical {
+	margin: 10px 0;
+}
+.clients {
+	color: #000;
+	margin: 20px 0 10px;
+}
+#checkoutWrap {
+	margin: 20px 0 30px;
+}
+#payment-address h2 {
+	color: #000;
+	margin-left: 48px;
+}
+.warning {
+    background: none repeat scroll 0 0 #EF7C46;
+    border: 1px solid #E0280C;
+    color: #FFFFFF;
+    margin: 10px 0;
+    padding: 6px;
+}
+.close {
+	margin: 6px;
+}
+#payment-existing select, #shipping-existing select {
+	width: 100%;
+	margin: 15px 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.existing-new-address, .payment {
+	margin-top: 10px;
+}
+.end-total {
+	text-align: right;
+}
+#shipping-method textarea, #payment-method textarea, .custom-inputs textarea {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.end-checkout {
+	margin-top: 10px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+}
+.checkout {
+	margin-bottom: 40px;
+}
+.payment {
+	margin-bottom: 20px;
+}
+.shipping-input {
+    border-top: 1px solid #DDDDDD;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+/*  VOUCHER  */
+.radio-input input {
+	height: auto;
+	margin: 0 10px 0 0;
+}
+.categorycontent {
+	margin-bottom: 30px;
+}
+/* COMPARE PAGE */
+.compareImage {
+	position: relative;
+}
+.compareImage .sale-icon {
+	top: 0;
+	left: 60px;
+}
+
+/* GRID LAYOUT */
+
+#grid {
+	display: none;
+}
+.single-grid .image, 
+.single-grid .cart, 
+.single-grid .wishcom {
+    text-align: center;
+}
+.single-grid .stock {
+	text-align: right;
+}
+.single-grid .price {
+    height: 27px;
+    text-align: left;
+}
+.single-grid .image {
+	position: relative;
+    border: 1px solid #EFEFEF;
+}
+.single-grid .ratingg {
+    margin-top: -20px;
+    position: absolute;
+}

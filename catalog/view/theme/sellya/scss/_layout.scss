@@ -1,0 +1,83 @@
+.wrapper {
+    background: url(../imgs/pattern.jpg);
+    min-width: 298px;
+    border:none !important;
+}
+#header {
+    background: $white;
+    margin-top: -22px;
+    padding-top: 22px;
+    padding-bottom: 20px;
+}
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+#midsection {
+    background: $white;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0 67px;
+
+    .homepage & {
+        margin-top: -51px;
+        padding-top: 71px;
+    }
+}
+#column-left {
+    float: left;
+    width: 250px!important;
+    margin-left: 20px;
+    margin-bottom: 25px;    
+}
+#column-right {
+    float: right;
+    width: 216px!important;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+#content {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 15px 0;
+    background: $white;
+
+    > .row-fluid {
+        padding-right: 0;
+    }
+}
+#content-home {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    padding: 0 0 15px 0;
+
+    .span {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+#column-right + #content {
+    padding: 17px;  
+}
+#ccp {
+    margin: 0 auto; 
+}
+.span-first-child {
+    margin-left: 0!important;
+    clear: left!important;
+}
+.span3 {
+    clear: none;
+}
+.span9 {
+    width: 730px;
+}
+.span9 .row-fluid,
+.span10 .row-fluid,
+.span11 .row-fluid,
+.span12 .row-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+}

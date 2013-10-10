@@ -1,0 +1,180 @@
+/******************************************************/
+/*  ALERT BOXES
+/******************************************************/
+.success, .warning, .attention, .information {
+    padding: 10px 10px 10px 33px;
+    margin: 10px auto;
+    color: $darkestGray;
+    position: relative;
+    .close {
+        background: none;
+        height: auto;
+        width: auto;
+    }
+}
+.success {
+    background: #EAF7D9 url('../image/success.png') 10px center no-repeat;
+    border: 1px solid #BBDF8D;
+}
+.warning {
+    background: #FFD1D1 url('../image/warning.png') 10px center no-repeat;
+    border: 1px solid #F8ACAC;
+}
+.attention {
+    background: #FFF5CC url('../image/attention.png') 10px center no-repeat;
+    border: 1px solid #F2DD8C;
+}
+.close {
+    float: right;
+    padding-top: 4px;
+    padding-right: 4px;
+    cursor: pointer;
+}
+.required {
+    color: $red;
+    font-weight: bold;
+}
+.error {
+    display: block;
+    color: $red;
+}
+.help {
+    font-size: 10px;
+    font-weight: normal;
+    display: block;
+}
+/******************************************************/
+/*  TABLES
+/******************************************************/
+.form {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+    tr td:first-child {
+        width: auto;
+    }
+
+    td {
+        padding: 4px;
+    }
+}
+
+.large-field {
+    width: 300px;
+}
+
+.list {
+    border-collapse: collapse;
+    width: 100%;
+    border-top: 1px solid $lightGray;
+    border-left: 1px solid $lightGray;
+    margin-bottom: 20px;
+
+    td {
+        border-right: 1px solid $lightGray;
+        border-bottom: 1px solid $lightGray;
+    }
+    thead td {
+        background-color: $smokeWhite;
+        padding: 0 5px;
+    }
+    thead td a, thead td {
+        text-decoration: none;
+        color: $lighterBlack;
+        font-weight: bold;
+    }
+    tbody td {
+        vertical-align: top;
+        padding: 0 5px;
+    }
+    .left {
+        text-align: left;
+        padding: 7px;
+    }
+    .right {
+        text-align: right;
+        padding: 7px;
+    }
+    .center {
+        text-align: center;
+        padding: 7px;
+    }
+}
+
+.radio {
+    width: 100%;
+    border-collapse: collapse;
+    td {
+        padding: 5px;
+        vertical-align: middle;
+    }
+    tr td:first-child {
+        width: 1px;
+    }
+    tr.highlight:hover td {
+        background: $smokeWhite;
+        cursor: pointer;
+    }
+    label {
+        width: 100%;
+        height: 15px;
+        @extend .inline-block;
+    }
+}
+/******************************************************/
+/*  BUTTONS
+/******************************************************/
+.button {
+    border: none;
+    color: $white;
+    padding: 8px;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+    @extend .inline-block;
+    position: relative;
+
+    @include transition('all 0.2s ease-in 0s');
+}
+.button-exclusive {
+    border: 1px solid;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    @extend .inline-block;
+    position: relative;
+
+    @include transition('all 0.2s ease-in 0s'); 
+    &:hover {
+        @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.2) inset);
+    }
+}
+a.button-exclusive {
+    text-decoration: none;
+    padding: 10px 20px;
+}
+input.button-exclusive {
+    margin: 0;
+    padding: 10px 20px;
+}
+.buttons {
+    overflow: auto;
+    padding: 6px;
+    margin-bottom: 20px;
+    
+    .left {
+        float: left;
+        text-align: left;
+    }
+    .right {
+        float: right;
+        text-align: right;
+    }
+    .center {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,248 @@
+/*  Currency & Language dropdowns  */
+#lc_dropdown {
+    position: absolute; 
+    top: 42px;
+    right: 0;
+}
+#currency .arrow, #language .arrow {
+    background: url("../image/arrow-down-gray.png") no-repeat 100% 50%;
+    padding: 7px 0 7px 7px;
+    width: 8px;
+    height: 8px;
+    position: relative;
+    float: right;
+    cursor: default;    
+}
+.dropdown_l {
+    padding: 1px 0 1px;
+    position: absolute; 
+    z-index: 1000;
+    font-size: 11px;
+    min-width: 117px;
+    text-align: right;
+    #language & {
+        right: 125px;
+    }
+    #currency & {
+        right: 0;
+    }
+    ul {
+        display: none;
+        margin: 3px 0 0;
+        padding: 2px 10px 5px;
+        list-style-type: disc;
+        width: 95px;
+        @include box-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
+    }
+    .selected_l, li, li a {
+        display: block;
+        padding-bottom: 0;
+        text-decoration: none;
+        text-align: left;
+    }
+    li a {
+        padding: 5px 0 0;
+        font-size: 11px;        
+    }
+    .selected_l {
+        line-height: 21px;
+        float: right;
+        cursor: default;
+    }
+    .options_l {
+        cursor: pointer;
+        left: 0;
+        line-height: 11px;
+        display: none;
+        clear: both;
+    }
+}
+#language img {
+    cursor: pointer;
+    @extend .inline-block;
+    padding: 5px 4px 3px 0;
+    margin-right: 0;
+    vertical-align: top;    
+}
+#t-header {
+    padding-bottom: 4px;
+    position: relative;
+    z-index: 1;
+    clear: both;
+    #logo {
+        position: relative;
+        padding: 30px 5px 15px;
+        width: 350px;
+    }
+    .checkout {
+        text-align: center;
+        clear: both;
+        margin: 15px auto 10px;
+        a:hover {
+            color: $white!important;
+        }
+    }
+    .empty {
+        padding-top: 50px;
+        text-align: center;
+    }
+    #search {
+        position: relative;
+        float: left;
+        right: 40px;
+        clear: both;
+        input {        
+            background: none;
+            color: $darkerGray;
+            font: italic 14px "Trebuchet MS";
+            height: 29px;
+            margin: 0 24px 0 0;
+            padding: 3px 10px;
+            text-shadow: none;
+            width: 178px;
+            @include box-shadow(none);
+            @include border-radius(0);
+            
+            &:focus {
+                @include box-shadow(0 0 8px rgba(0, 0, 0, 0.1));
+            }
+        }
+    }
+    .button-search {
+        background: $green url(../imgs/search.png) no-repeat center;
+        cursor: pointer;
+        height: 37px;
+        left: 200px;
+        position: absolute;
+        top: 0;
+        width: 37px;
+        
+        &:hover {
+            background-color: darken($green, 10%);
+        }
+    }
+    #antet {
+        @extend .sprite;
+        background-position: 12px -399px;
+        float: left;
+        width: 339px;
+        height: 43px;
+        text-align: center;
+        color: #616161;
+        font: 14px $erasL;
+        margin-left: 30px;     
+    }
+    .links {
+        position: absolute;
+        top: 18px;
+        right: 0;
+        font-size: 10px;
+        padding-right: 0;
+        float: right;
+        clear: both;
+        a {
+            float: left;
+            display: block;
+            padding: 0;
+            font-size: 12px;
+            line-height: 12px;
+            + a {
+                margin-left: 14px;
+                padding-left: 14px;
+            }
+        }
+    }
+    #cart {
+        position: absolute;
+        top: 55px;
+        right: 0;
+        z-index: 9;
+        min-width: 180px;
+        .heading {
+            float: right;
+            margin-right: 0;
+            margin-top: 0;
+            padding: 3px 0 3px 30px;    
+            position: relative;
+            z-index: 100;
+            h5 {
+                font-size: 12px;
+                font-weight: bold;
+                text-align: left;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            a span {
+                padding: 10px 0;
+                height: 24px;
+                line-height: 24px;  
+            }
+        }
+        .content {
+            clear: both;
+            display: none;
+            position: relative;
+            top: 0;
+            padding: 8px;
+            min-height: 150px;
+            min-width: 350px;
+           
+            @include box-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
+        }
+        &.active .heading {
+            margin-top: 0;
+            padding-bottom: 10px;
+        }
+        &.active .content {
+            display: block;
+        }
+    }
+}
+.mini-cart-info {
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    td {
+        color: $black;
+        vertical-align: top;
+        padding: 10px 5px;
+        border-bottom: 1px solid $smokeWhite;
+        &.total {
+            text-align: right;
+        }
+    }
+    .image {
+        width: 1px;
+        img {
+            text-align: left;
+        }
+    }
+    .name small {
+        color: $darkestGray;
+    }
+    .quantity {
+        text-align: right;
+    }
+    .remove {
+        text-align: right;
+        img {
+            cursor: pointer;
+        }
+    }
+}
+.mini-cart-total {
+    text-align: right;
+    border-bottom: 1px solid $smokeWhite;
+    
+    table {
+        border-collapse: collapse;
+        @extend .inline-block;
+        margin-bottom: 5px;
+    }
+    td {
+        color: $black;
+        padding: 4px;
+    }
+}

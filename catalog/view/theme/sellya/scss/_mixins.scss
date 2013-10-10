@@ -1,0 +1,86 @@
+@mixin fontface($font, $fontName, $fontFolder: '../fonts/') {
+    @font-face {
+        font-family: $font;
+        src: url($fontFolder + $fontName + '.eot');
+        src: url($fontFolder + $fontName + '.eot?#iefix') format('embedded-opentype'),
+             url($fontFolder + $fontName + '.woff') format('woff'),
+             url($fontFolder + $fontName + '.ttf') format('truetype'),
+             url($fontFolder + $fontName + '.svg#' + $fontName) format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+@mixin linear-gradient($fromColor, $midColor, $toColor) {
+    background: $fromColor; // Old browsers
+    @include filter-gradient($fromColor, $toColor, vertical); // IE6-8
+    $experimental-support-for-svg: true; // IE9 SVG, needs conditional override of 'filter' to 'none'
+    @include background-image(linear-gradient(top, $fromColor 0%,$midColor 50%,$toColor 100%)); // Modern browsers
+}
+
+// Font variables
+$arial: 'Arial';
+$georgia: 'Georgia';
+$trebuchet: 'Trebuchet MS';
+$verdana: 'Verdana';
+
+$mainFont:  'bodoni_bk_btbook';
+$mainFontB: 'bodoni_bd_btbold';
+$mainFontI: 'bodoni_bk_btbook_italic';
+
+$secFont:  'CalifornianFBRegular';
+$secFontB: 'CalifornianFBBold';
+$secFontI: 'CalifornianFBItalic';
+
+$thirdFont: 'BodoniMTRegular';
+$thirdFontB: 'BodoniMTBold';
+$thirdFontI: 'BodoniMTItalic';
+
+    $thirdFontC: 'BodoniMTCondensed';
+    $thirdFontCB: 'BodoniMTCondensedBold';
+    $thirdFontCI: 'BodoniMTCondensedItalic';
+    $thirdFontCBI: 'BodoniMTCondensedBoldItalic';
+
+        $thirdFontBL: 'BodoniMTBlack';
+        $thirdFontBLI: 'BodoniMTBlackItalic';
+        $thirdFontPSTC: 'BodoniMTPosterCompressed';
+
+$erasL: 'ErasLightITCRegular';
+$erasM: 'ErasMediumITCRegular';
+$heroL: 'Hero_Light';
+
+$fontSize: 13px;
+$lineHeight: 20px;
+
+
+// Color variables
+$blue: #2596D2;
+$lightBlue: #AAE1F8;
+$pink: #ffafaf;
+$wetAsphaltLight: #7D9E9C;
+$red: #db2d33;
+$green: #63a544;
+$orange: #ff6600;
+
+$white: #fff;
+$smokeWhite: #F7F7F7;
+$lightGray: #eee;
+$almostGray: #d8d8d8;
+$gray: #ccc;
+$darkerGray: #a6a6a6;
+$moreGray: #999;
+$darkestGray: #555;
+$lighterBlack: #222;
+$black: #000;
+
+// Space variables
+$verticalSpace: 40px;
+
+// .give-space {
+//     margin-top: $verticalSpace;
+//     margin-bottom: $verticalSpace;
+// }
+// 
+// .centered {
+//     text-align: center;
+// }

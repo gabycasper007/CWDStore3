@@ -46,6 +46,7 @@ define('DIR_IMAGE', 'I:\www\wamp\www\CWDStore3/image/');
 define('DIR_CACHE', 'I:\www\wamp\www\CWDStore3/system/cache/');
 define('DIR_DOWNLOAD', 'I:\www\wamp\www\CWDStore3/download/');
 define('DIR_LOGS', 'I:\www\wamp\www\CWDStore3/system/logs/');
+define('REQ_URI','/CWDStore3/');
 
 // DB
 define('DB_DRIVER', 'mysql');

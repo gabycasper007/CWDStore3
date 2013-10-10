@@ -1,11 +1,12 @@
+<!-- Info Menu -->
 <div class="container">
 	<ul class="list-inline" id="menu_informations">
-	    <li id="menucateg-homepage">
+	    <li>
 	    	<a href="<?php echo $home; ?>">
 		    	<?php echo $text_home; ?>
 		    </a>
 		</li>
-	
+
 	    <?php foreach ($informations as $information) { ?>
 	    	<li>
 	    		<a href="<?php echo $information['href']; ?>">
@@ -13,7 +14,7 @@
 	    		</a>
 	    	</li>
 	    <?php } ?>
-	
+
 		<li>
 			<a href="<?php echo $voucher; ?>">
 				<?php echo $text_voucher; ?>
@@ -35,4 +36,4 @@
 			</a>
 		</li>
 	</ul>
-</div>
+</div> <!-- // Info Menu -->

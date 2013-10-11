@@ -336,7 +336,8 @@ class ControllerCommonHeader extends Controller {
 			'module/currency',
 			'module/cart',
 			'common/content_login',
-			'common/navigation_main'
+			'common/navigation_main',
+			'common/top_social'
 		);
 		
 		$this->session->data['symbol_left'] = $this->currency->getSymbolLeft($this->session->data['currency']); 

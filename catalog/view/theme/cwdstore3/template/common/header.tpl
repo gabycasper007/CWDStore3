@@ -35,5 +35,51 @@
 	<body class="<?php echo $body_class; ?>">
 
 		<div class="well well-sm">
-			<?php echo $navigation_main; ?>
+			<div class="container">
+				<div class="col-lg-7">
+					<?php echo $navigation_main; ?>
+				</div>
+				<div class="col-lg-5">
+					<div class="row">
+						<div class="col-lg-4">
+							<?php echo $currency; ?>
+						</div>
+						<div class="col-lg-3">
+							<?php echo $language; ?>
+						</div>
+						<div class="col-lg-5" id="topsocial">
+							<?php echo $top_social; ?>
+						</div>
+					</div>
+					
+				</div>
+			</div>	
+		</div>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-4">
+					<?php if ($logo) { ?>
+		    			<a href="<?php echo $home; ?>">
+							<img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" />
+						</a>
+					<?php } ?>
+				</div>
+
+				<div class="col-lg-4">
+					<div class="bgsearch" id="search">
+					   	<input class="form-control" type="text" name="search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" />
+						<?php if (isset($searchanise)) { ?>
+							<?php echo $searchanise; ?>
+						<?php } ?>
+						<div class="button-search"></div>
+					</div>
+				</div>
+
+				<div class="col-lg-4">
+					<?php echo $content_login; ?>
+					<?php echo $cart; ?>
+				</div>
+			</div>
 		</div>

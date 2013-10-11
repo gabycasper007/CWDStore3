@@ -76,17 +76,12 @@
             if(!$logged) { ?>
                                 
                 <h2>Autentificare</h2>
-                <a class="btn btn-large autentificare" href="<?php echo $login; ?>">
-                </a>
+                <a class="btn btn-large autentificare" href="<?php echo $login; ?>"></a>
                 <a class="box-fbconnect-a" href="<?php echo $fbconnect_url; ?>"><?php echo $fbconnect_button; ?></a>
-                <a class="btn btn-large autentificare" href="<?php echo $login; ?>">
-                </a>
-                <a class="btn btn-large autentificare" href="<?php echo $login; ?>">
-                </a>
-                <a class="btn btn-large autentificare" href="<?php echo $login; ?>">
-                </a>
-                <a class="btn btn-large autentificare" href="<?php echo $login; ?>">
-                </a>
+                <a class="btn btn-large autentificare" href="<?php echo $login; ?>"></a>
+                <a class="btn btn-large autentificare" href="<?php echo $login; ?>"></a>
+                <a class="btn btn-large autentificare" href="<?php echo $login; ?>"></a>
+                <a class="btn btn-large autentificare" href="<?php echo $login; ?>"></a>
          <?php } ?>
 
         <fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
